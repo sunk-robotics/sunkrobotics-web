@@ -90,15 +90,9 @@ h3 {
   color: white !important;
 }
 
-.img-fluid {
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-}
-
 #robots .img-fluid {
   max-width: 90vw !important;
-  width: inherit;
+  width: 100%;
   height: auto;
 }
 
@@ -118,6 +112,14 @@ h3 {
 #mainNav.scrolled img {
   height: 60px;
   transition: height 0.3s ease;
+}
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none;
 }
 .hero {
   position: relative;
@@ -272,14 +274,15 @@ h3 {
   position: absolute;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
   text-decoration: none;
 }
-    .spec-list {
-      font-size: 1.1rem;
-    }
 
+.spec-list {
+  font-size: 1.1rem;
+}
+  
 li {
   font-size: 1.2rem;
 }
@@ -307,9 +310,7 @@ li {
     left: 0;
     transform: translateX(-50%);
   }
-  #mainNav img {
-      max-height: 30px !important;
-  }
+
 }
 
 /* Dropdown Styles */
