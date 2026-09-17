@@ -12,7 +12,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="{{ url_for('static', filename='img/favicon/android-chrome-512x512.png') }}">
   <link rel="manifest" href="{{ url_for('static', filename='img/favicon/site.webmanifest') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon/favicon.ico') }}">
-  <link rel="preconnect">
+  <link rel="preconnect" href="https://medford52.autodesk360.com" crossorigin>
+  <link rel="dns-prefetch" href="https://medford52.autodesk360.com">
   <title>{% block title %}Sunk Robotics - MVTHS Robotics Team{% endblock %}</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -45,21 +46,21 @@
         <span class="navbar-toggler-icon" style="--bs-navbar-toggler-icon-bg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27%23ffffff%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item dropdown h4 spacer">
+        <ul class="navbar-nav nav-links">
+          <li class="nav-item nav-cell"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item nav-cell"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item dropdown nav-cell">
             <a class="nav-link dropdown-toggle" href="/#robots" id="robotsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Robots
             </a>
-            <ul class="dropdown-menu mt-2 shadow rounded border-0" aria-labelledby="robotsDropdown">
+            <ul class="dropdown-menu nav-dropdown" aria-labelledby="robotsDropdown">
               <li><a class="dropdown-item" href="/bob">BOB ROV</a></li>
-              <li><a class="dropdown-item" href="/jona">JONA ROV</a></li>
-              <li><a class="dropdown-item" href="/jena">JENA FLOAT</a></li>
+              <li><a class="dropdown-item" href="/jona" data-model-preload="https://medford52.autodesk360.com/shares/public/SH30dd5QT870c25f12fc1fb2ed57ddc20beb?mode=embed">JONA ROV</a></li>
+              <li><a class="dropdown-item" href="/jena" data-model-preload="https://medford52.autodesk360.com/shares/public/SH28cd1QT2badd0ea72b4e5d86845af962e2?mode=embed">JENA FLOAT</a></li>
                         <!-- Add more robots here as needed -->
             </ul>
           </li>
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item nav-cell"><a class="nav-link" href="/contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -75,18 +76,18 @@
         <!-- Replace with your logo SVG or image -->
         <img src="{{ url_for('static', filename='img/SunkWTlogo.svg') }}" alt="Sunk Robotics Logo">
       </a>
-    <div class="footer-content text-center">
+    <div class="footer-content">
       <div class="container">
         <p>&copy; 2025 Sunk Robotics. All rights reserved.</p>
-        <p class="ad"><a href="https://www.mileshilliard.com/">www.mileshilliard.com</a></p>
-        <div class="social-icons d-flex justify-content-center gap-3 mt-2">
-          <a href="https://instagram.com/sunkrobotics" target="_blank" class="text-white fs-3">
+        <p class="ad"><a href="https://www.mileshilliard.com/" target="_blank">www.mileshilliard.com</a></p>
+        <div class="social-icons">
+          <a href="https://instagram.com/sunkrobotics" target="_blank" class="social-link">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="https://github.com/sunk-robotics" target="_blank" class="text-white fs-3">
+          <a href="https://github.com/sunk-robotics" target="_blank" class="social-link">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/company/sunk-robotics/" target="_blank" class="text-white fs-3">
+          <a href="https://www.linkedin.com/company/sunk-robotics/" target="_blank" class="social-link">
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
@@ -96,6 +97,37 @@
 
   <!-- Bootstrap JS (Popper + JS) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Warm up 3D model embeds on hover/focus/tap -->
+  <script>
+    (function () {
+      var warmed = new Set();
+      function warmModel(src) {
+        if (!src || warmed.has(src)) return;
+        warmed.add(src);
+        if (document.querySelector('iframe[src="' + src + '"]')) return;
+        var frame = document.createElement("iframe");
+        frame.src = src;
+        frame.setAttribute("aria-hidden", "true");
+        frame.tabIndex = -1;
+        frame.loading = "eager";
+        frame.style.position = "absolute";
+        frame.style.width = "1px";
+        frame.style.height = "1px";
+        frame.style.opacity = "0";
+        frame.style.pointerEvents = "none";
+        frame.style.border = "0";
+        document.body.appendChild(frame);
+      }
+      document.querySelectorAll("[data-model-preload]").forEach(function (el) {
+        var src = el.getAttribute("data-model-preload");
+        ["pointerenter", "focus", "touchstart"].forEach(function (eventName) {
+          el.addEventListener(eventName, function () { warmModel(src); },
+            eventName === "touchstart" ? { passive: true } : {});
+        });
+      });
+    })();
+  </script>
 </body>
 <script>
   window.addEventListener("scroll", function () {

@@ -3,14 +3,14 @@
 {% block content %}
 
 <!-- Products / Showcase Section -->
-<section id="robots" class="py-5 bg-light">
+<section id="robots" class="section-band">
   <div class="container">
-    <h1 class="display-3 fw-bold text-center mb-5">BOB ROV</h1>
+    <h1 class="page-title">BOB ROV</h1>
 
     <!-- Development Notice 
     <div class="row mb-5">
       <div class="col-12">
-        <div class="text-center shadow p-4 mb-3" role="alert" style="border-radius: 10px; background-color: #004080; color: white;">
+        <div class="notice-box" role="alert" style="border-radius: 10px; background-color: #004080; color: white;">
           <strong>BOB ROV is currently still being developed. Information on this page is subject to change.</strong>
         </div>
       </div>
@@ -18,9 +18,9 @@
     -->
 
     <!-- Hero Image Section -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-lg-7">
-        <img src="{{ url_for('static', filename='img/bob/bob.webp') }}" class="img-fluid rounded" style="width: 100%;"
+        <img src="{{ url_for('static', filename='img/bob/bob.webp') }}" class="content-image" style="width: 100%;"
           alt="Bob ROV">
       </div>
       <div class="col-lg-5">
@@ -38,9 +38,9 @@
 
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery3.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery3.jpg') }}" class="carousel-image"
             alt="Team Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
             <h5>All In House</h5>
             <p>All of our components are designed and manufactured in-house out of MVTHS Engineering Shop in Medford,
               MA.</p>
@@ -48,9 +48,9 @@
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery1.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery1.jpg') }}" class="carousel-image"
             alt="History Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
             <h5>Custom Pressure Vessel</h5>
             <p>BOB ROV features an aluminum pressure vessel designed to withstand deep-sea conditions of up to 500m with
               a 3x safety factor.</p>
@@ -59,9 +59,9 @@
 
         <!-- Slide 2 -->
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery2.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery2.jpg') }}" class="carousel-image"
             alt="Projects Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
             <h5>Aluminum Endcaps</h5>
             <p>Machined aluminum endcaps are used to seal the pressure vessel ensuring maximum flexibility in our
               design.</p>
@@ -70,9 +70,9 @@
 
         <!-- Slide 4 -->
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery4.png') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery4.png') }}" class="carousel-image"
             alt="Locations Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
             <h5>Custom Electronics</h5>
             <p>Every board, down to the motor driver is designed, optimized, and assembled for our most precise design.
             </p>
@@ -80,53 +80,53 @@
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery5.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery5.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
             <h5>Accomplishments</h5>
             <p>We have competed in several MATE ROV competitions, including regionals and world championships.</p>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery6.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery6.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery7.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery7.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery8.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery8.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery9.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery9.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery10.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery10.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery11.jpg') }}" class="d-block w-100 rounded"
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery11.jpg') }}" class="carousel-image"
             alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <div class="carousel-caption slide-caption">
           </div>
         </div>
 
@@ -165,7 +165,7 @@
   <!-- Technical Specifications -->
   <div id="techSpecs">
     <br><br><br>
-    <h1 class="text-center mb-5">Technical Specifications</h1>
+    <h1 class="section-heading">Technical Specifications</h1>
     <div class="container spec-list">
       <div class="row">
         <div class="col-12">

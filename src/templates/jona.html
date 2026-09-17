@@ -3,14 +3,14 @@
 {% block content %}
 
 <!-- Products / Showcase Section -->
-<section id="robots" class="py-5 bg-light">
+<section id="robots" class="section-band">
   <div class="container">
-    <h1 class="text-center mb-5">JONA ROV and Accessories</h1>
+    <h1 class="section-heading">JONA ROV and Accessories</h1>
 
     <!-- Product 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona.png') }}" class="img-fluid rounded img-max-500" alt="Jona ROV">
+        <img src="{{ url_for('static', filename='img/jona.png') }}" class="content-image img-max-500" alt="Jona ROV">
       </div>
       <div class="col-md-6">
         <h3>Overview</h3>
@@ -21,9 +21,9 @@
     </div>
 
     <!-- Product 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="feature-row feature-row--reverse">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona/guard.webp') }}" class="img-fluid rounded img-max-250" alt="Guard">
+        <img src="{{ url_for('static', filename='img/jona/guard.webp') }}" class="content-image img-max-250" alt="Guard">
       </div>
       <div class="col-md-6">
         <h3>Custom Thruster Guards</h3>
@@ -34,9 +34,9 @@
     </div>
 
       <!-- Product 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona/gripper.webp') }}" class="img-fluid rounded img-max-300" alt="Gripper">
+        <img src="{{ url_for('static', filename='img/jona/gripper.webp') }}" class="content-image img-max-300" alt="Gripper">
       </div>
       <div class="col-md-6">
         <h3>Mechanical Gripper</h3>
@@ -47,9 +47,9 @@
     </div>
 
     <!-- Product 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="feature-row feature-row--reverse">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona/fork.webp') }}" class="img-fluid rounded img-max-370" alt="Fork">
+        <img src="{{ url_for('static', filename='img/jona/fork.webp') }}" class="content-image img-max-370" alt="Fork">
       </div>
       <div class="col-md-6">
         <h3>Static Manipulator</h3>
@@ -60,9 +60,9 @@
     </div>
 
       <!-- Product 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona/tube.webp') }}" class="img-fluid rounded img-max-350" alt="Tube Cameras">
+        <img src="{{ url_for('static', filename='img/jona/tube.webp') }}" class="content-image img-max-350" alt="Tube Cameras">
       </div>
       <div class="col-md-6">
         <h3>Modular Tube Cameras</h3>
@@ -74,9 +74,9 @@
     </div>
 
     <!-- Product 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="feature-row feature-row--reverse">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona/logic.webp') }}" class="img-fluid rounded img-max-400" alt="Guard">
+        <img src="{{ url_for('static', filename='img/jona/logic.webp') }}" class="content-image img-max-400" alt="Guard">
       </div>
       <div class="col-md-6">
         <h3>Custom PCBs</h3>
@@ -87,30 +87,23 @@
   </div>
   
   <!-- 3D Model Section -->
-  <div class="container">
-    <br><br><br>
-    <h1 class="text-center mb-5">3D Model</h1>
+  <div class="container mt-5">
+    <h1 class="section-heading">3D Model</h1>
 
-    <div class="model-container">
-      <div class="row justify-content-center">
-        <div class="col-12 d-flex justify-content-center">
-          <div class="ratio ratio-16x9 iframe-3d-container">
-          <iframe src="https://medford52.autodesk360.com/shares/public/SH30dd5QT870c25f12fc1fb2ed57ddc20beb?mode=embed"
-            allowfullscreen
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-            class="iframe-3d">
-          </iframe>
-        </div>
-      </div>
+    <div class="ratio ratio-16x9 iframe-3d-container">
+      <iframe src="https://medford52.autodesk360.com/shares/public/SH30dd5QT870c25f12fc1fb2ed57ddc20beb?mode=embed"
+        allowfullscreen
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+        class="iframe-3d">
+      </iframe>
     </div>
   </div>
 
-  <div id="techSpecs">
-    <br><br><br>
-    <h1 class="text-center mb-5">Technical Specifications</h1>
+  <div id="techSpecs" class="mt-5">
+    <h1 class="section-heading">Technical Specifications</h1>
     <div class="container spec-list">
       <div class="row">
         <div class="col-12">

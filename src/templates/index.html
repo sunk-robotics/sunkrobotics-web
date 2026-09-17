@@ -27,15 +27,15 @@
 </section>
 
 <!-- Products / Showcase Section -->
-<section id="robots" class="py-5 bg-light">
+<section id="robots" class="section-band">
   <div class="container">
-    <h2 class="display-4 fw-bold mb-4 text-center">Meet The Robots</h2>
-    <h3 class="text-center mb-5">Check out our latest work</h3>
+    <h2 class="section-title section-title--center">Meet The Robots</h2>
+    <h3 class="section-heading">Check out our latest work</h3>
 
         <!-- Product 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="feature-row feature-row--reverse">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/bob/bob.webp') }}" class="img-fluid rounded" alt="Sunk Robotics' Float v1">
+        <img src="{{ url_for('static', filename='img/bob/bob.webp') }}" class="content-image" alt="Sunk Robotics' Float v1">
       </div>
       <div class="col-md-6">
         <h3>BOB ROV</h3>
@@ -47,9 +47,9 @@
     </div>
 
     <!-- Product 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/jona.png') }}" class="img-fluid rounded" alt="Jona ROV">
+        <img src="{{ url_for('static', filename='img/jona.png') }}" class="content-image" alt="Jona ROV">
       </div>
       <div class="col-md-6">
         <h3>JONA ROV</h3>
@@ -61,28 +61,28 @@
           based electronics system, and overall
           improved manuverability.
         </p>
-        <a href="/jona" class="btn btn-primary btn-lg">Learn More</a>
+        <a href="/jona" class="btn btn-primary btn-lg" data-model-preload="https://medford52.autodesk360.com/shares/public/SH30dd5QT870c25f12fc1fb2ed57ddc20beb?mode=embed">Learn More</a>
       </div>
     </div>
 
     <!-- Product 2 -->
-    <div class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="feature-row feature-row--reverse">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/float.png') }}" class="img-fluid rounded" alt="Sunk Robotics' Float v1">
+        <img src="{{ url_for('static', filename='img/float.png') }}" class="content-image" alt="Sunk Robotics' Float v1">
       </div>
       <div class="col-md-6">
         <h3>JENA Float</h3>
         <p class="lead">
           A vertically profiling robot designed to autonomously collect data from various depths in the ocean. Being revision two, this design includes a completely overhauled electronics system and a much more modern and controllable User Interface (UI).
         </p>
-        <a href="/jena" class="btn btn-primary btn-lg">Learn More</a>
+        <a href="/jena" class="btn btn-primary btn-lg" data-model-preload="https://medford52.autodesk360.com/shares/public/SH28cd1QT2badd0ea72b4e5d86845af962e2?mode=embed">Learn More</a>
       </div>
     </div>
 
     <!-- Product 3 -->
-    <div class="row align-items-center mb-5">
+    <div class="feature-row">
       <div class="col-md-6">
-        <img src="{{ url_for('static', filename='img/steve.png') }}" class="img-fluid rounded" alt="Steve ROV">
+        <img src="{{ url_for('static', filename='img/steve.png') }}" class="content-image" alt="Steve ROV">
       </div>
       <div class="col-md-6">
         <h3>STEVE ROV</h3>
@@ -95,9 +95,9 @@
 </section>
 
 <!-- Timeline Section -->
-<section class="py-5 bg-light">
+<section class="section-band">
   <div class="container">
-    <h2 class="display-4 fw-bold mb-4 text-center">Our Journey</h2>
+    <h2 class="section-title section-title--center">Our Journey</h2>
     <div class="timeline">
       <!-- Timeline Item 1 (Latest) -->
       <div class="timeline-item right">
@@ -151,16 +151,16 @@
 </section>
 
 <!-- Sponsors Section -->
-<section id="sponsors" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="display-4 fw-bold mb-4">Our Sponsors</h2>
+<section id="sponsors" class="section-band">
+  <div class="container intro-block">
+    <h2 class="section-title">Our Sponsors</h2>
     <p class="lead mx-auto" style="max-width: 700px;">
       From everyone at Sunk Robotics, we would like to give a huge thank you to our sponsors for their continuous and generous support.
       Without you, we would not be able to do what we do.
     </p>
-    <a href="https://www.watts.com/" target="_blank"><img style="max-width: 90vw;" src="{{ url_for('static', filename='img/watts-water.png') }}" alt="Thank you watts!" class="img-fluid rounded mt-4" style="max-width: 1000px;"></a>
+    <a href="https://www.watts.com/" target="_blank"><img style="max-width: 90vw;" src="{{ url_for('static', filename='img/watts-water.png') }}" alt="Thank you watts!" class="content-image content-image--spaced" style="max-width: 1000px;"></a>
 
-    <p class="lead mx-auto mt-4" style="max-width: 700px;">
+    <p class="lead lead--spaced" style="max-width: 700px;">
       If you like what we do, consider supporting the team with a <a href="/contact">simple donation</a>.
     </p>
   </div>

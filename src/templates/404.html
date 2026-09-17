@@ -168,20 +168,20 @@
         <span class="navbar-toggler-icon" style="color:white;"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item dropdown h4 spacer">
+        <ul class="navbar-nav nav-links">
+          <li class="nav-item nav-cell"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item nav-cell"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item dropdown nav-cell">
             <a class="nav-link dropdown-toggle" href="/#robots" id="robotsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Robots
             </a>
-            <ul class="dropdown-menu mt-2 shadow rounded border-0" aria-labelledby="robotsDropdown">
+            <ul class="dropdown-menu nav-dropdown" aria-labelledby="robotsDropdown">
               <li><a class="dropdown-item" href="/bob">BOB ROV</a></li>
               <li><a class="dropdown-item" href="/jona">JONA ROV</a></li>
               <li><a class="dropdown-item" href="/jena">JENA FLOAT</a></li>
             </ul>
           </li>
-          <li class="nav-item h4 spacer"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item nav-cell"><a class="nav-link" href="/contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -210,18 +210,18 @@
     <a class="footer-sunk" href="/">
       <img src="{{ url_for('static', filename='img/SunkWTlogo.svg') }}" alt="Sunk Robotics Logo">
     </a>
-    <div class="footer-content text-center">
+    <div class="footer-content">
       <div class="container">
         <p>&copy; 2025 Sunk Robotics. All rights reserved.</p>
         <p class="ad"><a href="https://www.mileshilliard.com/">www.mileshilliard.com</a></p>
-        <div class="social-icons d-flex justify-content-center gap-3 mt-2">
-          <a href="https://instagram.com/sunkrobotics" target="_blank" class="text-white fs-3">
+        <div class="social-icons">
+          <a href="https://instagram.com/sunkrobotics" target="_blank" class="social-link">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="https://github.com/sunk-robotics" target="_blank" class="text-white fs-3">
+          <a href="https://github.com/sunk-robotics" target="_blank" class="social-link">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/company/sunk-robotics/" target="_blank" class="text-white fs-3">
+          <a href="https://www.linkedin.com/company/sunk-robotics/" target="_blank" class="social-link">
             <i class="bi bi-linkedin"></i>
           </a>
         </div>

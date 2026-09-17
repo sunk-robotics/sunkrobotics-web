@@ -3,17 +3,17 @@
 {% block content %}
 
 <!-- Output / Slideshow Section -->
-<section class="py-5 bg-light" style="margin-bottom: 3rem;">
-  <div class="container text-center">
-    <h2 class="display-4 fw-bold mb-5">What We Do & Who We Are</h2>
+<section class="section-band" style="margin-bottom: 3rem;">
+  <div class="container intro-block">
+    <h2 class="section-title section-title--spaced">What We Do & Who We Are</h2>
 
     <div id="outputCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2rem;">
       <div class="carousel-inner">
 
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img src="{{ url_for('static', filename='img/rotary/1-alt.webp') }}" class="d-block w-100 rounded" alt="Team Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <img src="{{ url_for('static', filename='img/rotary/1-alt.webp') }}" class="carousel-image" alt="Team Photo">
+          <div class="carousel-caption slide-caption">
             <h5>Who We Are</h5>
             <p>We're Sunk Robotics, a student-run robotics team based in Medford, Massachusetts.</p>
           </div>
@@ -21,16 +21,16 @@
 
         <!-- Slide 2 -->
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/rotary/2.webp') }}" class="d-block w-100 rounded" alt="Projects Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <img src="{{ url_for('static', filename='img/rotary/2.webp') }}" class="carousel-image" alt="Projects Photo">
+          <div class="carousel-caption slide-caption">
             <h5>What We Do</h5>
             <p>From building ROVs to testing new robotic solutions, we tackle real-world challenges.</p>
           </div>
         </div>
 
                 <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/rotary/4.webp') }}" class="d-block w-100 rounded" alt="History Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <img src="{{ url_for('static', filename='img/rotary/4.webp') }}" class="carousel-image" alt="History Photo">
+          <div class="carousel-caption slide-caption">
             <h5>Our History</h5>
             <p>Since 2020, we've developed multiple underwater engineering solutions including STEVE, JENA, and JONA ROVs.</p>
           </div>
@@ -38,16 +38,16 @@
 
         <!-- Slide 3 -->
         <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/rotary/3.webp') }}" class="d-block w-100 rounded" alt="Locations Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <img src="{{ url_for('static', filename='img/rotary/3.webp') }}" class="carousel-image" alt="Locations Photo">
+          <div class="carousel-caption slide-caption">
             <h5>Where We've Been</h5>
             <p>We were invited to the ribbon cutting of MITRE's new R&D pool and demonstrated our robots.</p>
           </div>
         </div>
 
                 <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/rotary/5.webp') }}" class="d-block w-100 rounded" alt="Accomplishments Photo">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+          <img src="{{ url_for('static', filename='img/rotary/5.webp') }}" class="carousel-image" alt="Accomplishments Photo">
+          <div class="carousel-caption slide-caption">
             <h5>Accomplishments</h5>
             <p>We have competed in several MATE ROV competitions, including regionals and world championships.</p>
           </div>
@@ -80,239 +80,239 @@
 
 
 <!-- About / Info Section -->
-<section id="content" class="py-5 bg-light">
-  <div class="container text-center">
+<section id="content" class="section-band">
+  <div class="container intro-block">
     <!-- Who We Are -->
     <div class="mb-5">
-      <h2 class="display-4 fw-bold mb-4">Who We Are</h2>
+      <h2 class="section-title">Who We Are</h2>
       <p class="lead mx-auto" style="max-width: 700px;">
         We're Sunk Robotics, a student-run robotics team based in Medford, Massachusetts.
         Our team is passionate about underwater engineering, hands-on design, and pushing
         the limits of robotics. Collaboration and innovation drive everything we do.
       </p>
-      <img src="{{ url_for('static', filename='img/team.webp') }}" alt="Team Photo" class="img-fluid rounded mt-4">
+      <img src="{{ url_for('static', filename='img/team.webp') }}" alt="Team Photo" class="content-image content-image--spaced">
     </div>
 
     <!-- What We Do -->
     <div class="mb-5">
-      <h2 class="display-4 fw-bold mb-4">What We Do</h2>
+      <h2 class="section-title">What We Do</h2>
       <p class="lead mx-auto" style="max-width: 700px;">
         From building Remote Operated Vehicles (ROVs) to developing and testing new robotic solutions,
         we design and fabricate technology for real-world challenges. Each project meets new criteria and overcomes different challenges.
       </p>
-      <img src="{{ url_for('static', filename='img/debug.webp') }}" alt="Projects Photo" class="img-fluid rounded mt-4">
+      <img src="{{ url_for('static', filename='img/debug.webp') }}" alt="Projects Photo" class="content-image content-image--spaced">
     </div>
 
     <!-- Our History -->
     <div class="mb-5">
-      <h2 class="display-4 fw-bold mb-4">Our History</h2>
+      <h2 class="section-title">Our History</h2>
       <p class="lead mx-auto" style="max-width: 700px;">
         Since our founding in November of 2020, Sunk Robotics has developed multiple
         underwater engineering solutions. Our current lineup includes STEVE ROV, JENA float,
         JONA ROV, and we are currently developing our latest ROV 2026 (BOB ROV).
       </p>
-      <img src="{{ url_for('static', filename='img/history.webp') }}" alt="History Photo" class="img-fluid rounded mt-4">
+      <img src="{{ url_for('static', filename='img/history.webp') }}" alt="History Photo" class="content-image content-image--spaced">
     </div>
   </div>
 </section>
 
 <!-- Team / Employees Section -->
-<section class="py-5 bg-light" style="padding-top: 3rem !important;">
-  <div class="container text-center">
-    <h2 class="display-4 fw-bold mb-5">Meet Our Team</h2>
+<section class="section-band" style="padding-top: 3rem !important;">
+  <div class="container intro-block">
+    <h2 class="section-title section-title--spaced">Meet Our Team</h2>
 
-    <div class="row g-4 justify-content-center">
+    <div class="team-grid">
 
       <!-- Employee 1 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://ibrahimazeemi.com" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://ibrahimazeemi.com" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/ibrahima.webp') }}" class="card-img-top" alt="Ibrahim Ahmad">
             <div class="card-body">
               <h5 class="card-title">Ibrahim Ahmad</h5>
-              <p class="card-text text-muted">Mechanical Engineer Lead - 2028</p>
+              <p class="card-role">Mechanical Engineer Lead - 2028</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 2 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://mothsite.netlify.app/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://mothsite.netlify.app/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/alachie.webp') }}" class="card-img-top" alt="Alachie Yeager">
             <div class="card-body">
               <h5 class="card-title">Alachie Yeager</h5>
-              <p class="card-text text-muted">Programming Lead - 2028</p>
+              <p class="card-role">Programming Lead - 2028</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 3 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.mileshilliard.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.mileshilliard.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/miles.webp') }}" class="card-img-top" alt="Miles Hilliard">
             <div class="card-body">
               <h5 class="card-title">Miles Hilliard</h5>
-              <p class="card-text text-muted">Electrical Engineer Lead - 2027</p>
+              <p class="card-role">Electrical Engineer Lead - 2027</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 4 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.timmy.greenlifestylelabs.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.timmy.greenlifestylelabs.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/jim.webp') }}" class="card-img-top" alt="Timothy Hunt">
             <div class="card-body">
               <h5 class="card-title">Timothy Hunt</h5>
-              <p class="card-text text-muted">Mechanical Engineer Lead - 2027</p>
+              <p class="card-role">Mechanical Engineer Lead - 2027</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 5 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://jonaswirz.wordpress.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://jonaswirz.wordpress.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/jonas.webp') }}" class="card-img-top" alt="Jonas Wirz">
             <div class="card-body">
               <h5 class="card-title">Jonas Wirz</h5>
-              <p class="card-text text-muted">Pilot - 2027</p>
+              <p class="card-role">Pilot - 2027</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 6 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://abendaniel.top/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://abendaniel.top/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/pfp.webp') }}" class="card-img-top" alt="Aaron Bendaniel">
             <div class="card-body">
               <h5 class="card-title">Aaron BenDaniel</h5>
-              <p class="card-text text-muted">Alumni - 2025</p>
+              <p class="card-role">Alumni - 2025</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 7 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://benwirz.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://benwirz.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/benw.webp') }}" class="card-img-top" alt="Ben Wirz">
             <div class="card-body">
               <h5 class="card-title">Ben Wirz</h5>
-              <p class="card-text text-muted">Alumni - 2025</p>
+              <p class="card-role">Alumni - 2025</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 8 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="http://josephscottcampbell.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="http://josephscottcampbell.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Joseph Scott Campbell Jr">
             <div class="card-body">
               <h5 class="card-title">Joseph Scott Campbell Jr</h5>
-              <p class="card-text text-muted">Alumni - 2025</p>
+              <p class="card-role">Alumni - 2025</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 9 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.linkedin.com/in/noah-ed-gibson" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/noah-ed-gibson" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Noah Gibson">
             <div class="card-body">
               <h5 class="card-title">Noah Gibson</h5>
-              <p class="card-text text-muted">Alumni - 2024</p>
+              <p class="card-role">Alumni - 2024</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 10 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.linkedin.com/in/zackbertocchi" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/zackbertocchi" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/zach.webp') }}" class="card-img-top" alt="Zach Bertocchi">
             <div class="card-body">
               <h5 class="card-title">Zack Bertocchi</h5>
-              <p class="card-text text-muted">Alumni - 2024</p>
+              <p class="card-role">Alumni - 2024</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 11 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <!--<a href="#" target="_blank" class="text-decoration-none">-->
-          <div class="card border-0">
+      <div class="team-card">
+        <!--<a href="#" target="_blank" class="plain-link">-->
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Franklin DeSoto Ortiz">
             <div class="card-body">
               <h5 class="card-title">Franklin DeSoto Ortiz</h5>
-              <p class="card-text text-muted">Alumni - 2024</p>
+              <p class="card-role">Alumni - 2024</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 12 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.linkedin.com/in/benjamin-a-santana" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/benjamin-a-santana" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/ben.webp') }}" class="card-img-top" alt="Ben Santana">
             <div class="card-body">
               <h5 class="card-title">Ben Santana</h5>
-              <p class="card-text text-muted">Alumni - 2024</p>
+              <p class="card-role">Alumni - 2024</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 13 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.mattyharris.net/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.mattyharris.net/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Matty Harris">
             <div class="card-body">
               <h5 class="card-title">Matty Harris</h5>
-              <p class="card-text text-muted">Alumni - 2024</p>
+              <p class="card-role">Alumni - 2024</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 14 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://www.linkedin.com/in/christopher-hunt-080019282" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/christopher-hunt-080019282" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Chris Hunt">
             <div class="card-body">
               <h5 class="card-title">Chris Hunt</h5>
-              <p class="card-text text-muted">Alumni - 2023</p>
+              <p class="card-role">Alumni - 2023</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Employee 15 -->
-      <div class="col-6 col-sm-4 col-md-3">
-        <a href="https://gracekallberg.wordpress.com/" target="_blank" class="text-decoration-none">
-          <div class="card border-0">
+      <div class="team-card">
+        <a href="https://gracekallberg.wordpress.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
             <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Grace Kalberg">
             <div class="card-body">
               <h5 class="card-title">Grace Kalberg</h5>
-              <p class="card-text text-muted">Alumni - 2023</p>
+              <p class="card-role">Alumni - 2023</p>
             </div>
           </div>
         </a>
@@ -321,26 +321,26 @@
     </div>
 
     <!-- Teacher Appreciation Section -->
-    <div class="mt-5 pt-5 border-top">
-      <h2 class="display-4 fw-bold mb-5">Our Mentor</h2>
-      <div class="row justify-content-center">
-        <div class="col-6 col-sm-4 col-md-3">
-          <a href="https://medfordengineering.github.io/mrchristysengineering/" target="_blank" class="text-decoration-none">
-            <div class="card border-0">
+    <div class="section-divider">
+      <h2 class="section-title section-title--spaced">Our Mentor</h2>
+      <div class="centered-row">
+        <div class="mentor-card">
+          <a href="https://medfordengineering.github.io/mrchristysengineering/" target="_blank" class="plain-link">
+            <div class="card person-card">
               <img src="{{ url_for('static', filename='img/team/mrchristy.webp') }}" class="card-img-top" alt="Mr. Christy">
               <div class="card-body">
                 <h5 class="card-title">Mr. Christy</h5>
-                <p class="card-text text-muted">Engineering Teacher</p>
+                <p class="card-role">Engineering Teacher</p>
               </div>
             </div>
           </a>
         </div>
       </div>
-      <div class="row justify-content-center mt-4">
+      <div class="centered-row centered-row--spaced">
         <div class="col-8 col-md-6 text-center">
-          <div class="card border-0 shadow-sm">
+          <div class="card person-card shadow-sm">
             <div class="card-body">
-              <p class="lead mb-0">
+              <p class="lead lead--flush">
                 The Sunk Robotics team would like to express our deepest gratitude to Mr. Christy. Thank you for being an incredible mentor and inspiration to the Sunk Robotics team!
               </p>
             </div>
