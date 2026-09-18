@@ -79,7 +79,7 @@
     <div class="footer-content">
       <div class="container">
         <p>&copy; 2025 Sunk Robotics. All rights reserved.</p>
-        <p class="ad"><a href="https://www.mileshilliard.com/" target="_blank">www.mileshilliard.com</a></p>
+        <p class="ad">made by <a href="https://www.mileshilliard.com/" target="_blank">Miles</a> and <a href="https://www.andrewhuang.cc/" target="_blank">Andrew</a></p>
         <div class="social-icons">
           <a href="https://instagram.com/sunkrobotics" target="_blank" class="social-link">
             <i class="bi bi-instagram"></i>
@@ -142,6 +142,26 @@
       nav.classList.remove("scrolled");
     }
   }
+</script>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll(".reveal");
+    if (items.length === 0) return;
+    if (!("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("in-view"); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+    items.forEach(function (el) { observer.observe(el); });
+  })();
 </script>
 
 </html>
