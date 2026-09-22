@@ -33,132 +33,83 @@
       </div>
     </div>
 
-    <div id="outputCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2rem;">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery3.jpg') }}" class="carousel-image"
-            alt="Team Photo">
+    <div id="outputCarousel" class="gallery-carousel" aria-label="BOB ROV gallery" style="margin-bottom: 2rem;">
+      <ul class="carousel-track">
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery3.jpg') }}" class="carousel-image" alt="Team Photo">
           <div class="carousel-caption slide-caption">
             <h5>All In House</h5>
-            <p>All of our components are designed and manufactured in-house out of MVTHS Engineering Shop in Medford,
-              MA.</p>
+            <p>All of our components are designed and manufactured in-house out of MVTHS Engineering Shop in Medford, MA.</p>
           </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery1.jpg') }}" class="carousel-image"
-            alt="History Photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery1.jpg') }}" class="carousel-image" alt="History Photo">
           <div class="carousel-caption slide-caption">
             <h5>Custom Pressure Vessel</h5>
-            <p>BOB ROV features an aluminum pressure vessel designed to withstand deep-sea conditions of up to 500m with
-              a 3x safety factor.</p>
+            <p>BOB ROV features an aluminum pressure vessel designed to withstand deep-sea conditions of up to 500m with a 3x safety factor.</p>
           </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery2.jpg') }}" class="carousel-image"
-            alt="Projects Photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery2.jpg') }}" class="carousel-image" alt="Projects Photo">
           <div class="carousel-caption slide-caption">
             <h5>Aluminum Endcaps</h5>
-            <p>Machined aluminum endcaps are used to seal the pressure vessel ensuring maximum flexibility in our
-              design.</p>
+            <p>Machined aluminum endcaps are used to seal the pressure vessel ensuring maximum flexibility in our design.</p>
           </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery4.png') }}" class="carousel-image"
-            alt="Locations Photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery4.png') }}" class="carousel-image" alt="Locations Photo">
           <div class="carousel-caption slide-caption">
             <h5>Custom Electronics</h5>
-            <p>Every board, down to the motor driver is designed, optimized, and assembled for our most precise design.
-            </p>
+            <p>Every board, down to the motor driver is designed, optimized, and assembled for our most precise design.</p>
           </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery5.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery5.jpg') }}" class="carousel-image" alt="Accomplishments Photo">
           <div class="carousel-caption slide-caption">
             <h5>Accomplishments</h5>
             <p>We have competed in several MATE ROV competitions, including regionals and world championships.</p>
           </div>
-        </div>
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery6.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery7.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery8.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery9.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery10.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+        <li class="carousel-slide">
+          <img src="{{ url_for('static', filename='img/bob/rotary/gallery11.jpg') }}" class="carousel-image" alt="BOB ROV photo">
+        </li>
+      </ul>
 
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery6.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery7.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery8.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery9.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery10.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{ url_for('static', filename='img/bob/rotary/gallery11.jpg') }}" class="carousel-image"
-            alt="Accomplishments Photo">
-          <div class="carousel-caption slide-caption">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev large-button carousel-button-large" type="button"
-        data-bs-target="#outputCarousel" data-bs-slide="prev" style="z-index: 0;">
+      <button type="button" class="carousel-button carousel-button--prev" aria-label="Previous slide">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next large-button carousel-button-large" type="button"
-        data-bs-target="#outputCarousel" data-bs-slide="next" style="z-index: 0;">
+      <button type="button" class="carousel-button carousel-button--next" aria-label="Next slide">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
       </button>
 
-      <!-- Indicators -->
-      <div class="carousel-indicators mt-3">
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="0" class="active"
-          aria-current="true"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="3"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="4"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="5"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="6"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="7"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="8"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="9"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="10"></button>
-      </div>
+      <ul class="carousel-dots" aria-label="Choose slide">
+        <li><button type="button" data-slide-to="0" class="active" aria-current="true" aria-label="Go to slide 1"></button></li>
+        <li><button type="button" data-slide-to="1" aria-label="Go to slide 2"></button></li>
+        <li><button type="button" data-slide-to="2" aria-label="Go to slide 3"></button></li>
+        <li><button type="button" data-slide-to="3" aria-label="Go to slide 4"></button></li>
+        <li><button type="button" data-slide-to="4" aria-label="Go to slide 5"></button></li>
+        <li><button type="button" data-slide-to="5" aria-label="Go to slide 6"></button></li>
+        <li><button type="button" data-slide-to="6" aria-label="Go to slide 7"></button></li>
+        <li><button type="button" data-slide-to="7" aria-label="Go to slide 8"></button></li>
+        <li><button type="button" data-slide-to="8" aria-label="Go to slide 9"></button></li>
+        <li><button type="button" data-slide-to="9" aria-label="Go to slide 10"></button></li>
+        <li><button type="button" data-slide-to="10" aria-label="Go to slide 11"></button></li>
+      </ul>
     </div>
   </div>
 

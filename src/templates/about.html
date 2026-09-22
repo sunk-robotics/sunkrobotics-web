@@ -7,73 +7,59 @@
   <div class="container intro-block">
     <h2 class="section-title section-title--spaced">What We Do & Who We Are</h2>
 
-    <div id="outputCarousel" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2rem;">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
+    <div id="outputCarousel" class="gallery-carousel" aria-label="Sunk Robotics gallery" style="margin-bottom: 2rem;">
+      <ul class="carousel-track">
+        <li class="carousel-slide">
           <img src="{{ url_for('static', filename='img/rotary/1-alt.webp') }}" class="carousel-image" alt="Team Photo">
           <div class="carousel-caption slide-caption">
             <h5>Who We Are</h5>
             <p>We're Sunk Robotics, a student-run robotics team based in Medford, Massachusetts.</p>
           </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
+        </li>
+        <li class="carousel-slide">
           <img src="{{ url_for('static', filename='img/rotary/2.webp') }}" class="carousel-image" alt="Projects Photo">
           <div class="carousel-caption slide-caption">
             <h5>What We Do</h5>
             <p>From building ROVs to testing new robotic solutions, we tackle real-world challenges.</p>
           </div>
-        </div>
-
-                <div class="carousel-item">
+        </li>
+        <li class="carousel-slide">
           <img src="{{ url_for('static', filename='img/rotary/4.webp') }}" class="carousel-image" alt="History Photo">
           <div class="carousel-caption slide-caption">
             <h5>Our History</h5>
             <p>Since 2020, we've developed multiple underwater engineering solutions including STEVE, JENA, and JONA ROVs.</p>
           </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
+        </li>
+        <li class="carousel-slide">
           <img src="{{ url_for('static', filename='img/rotary/3.webp') }}" class="carousel-image" alt="Locations Photo">
           <div class="carousel-caption slide-caption">
             <h5>Where We've Been</h5>
             <p>We were invited to the ribbon cutting of MITRE's new R&D pool and demonstrated our robots.</p>
           </div>
-        </div>
-
-                <div class="carousel-item">
+        </li>
+        <li class="carousel-slide">
           <img src="{{ url_for('static', filename='img/rotary/5.webp') }}" class="carousel-image" alt="Accomplishments Photo">
           <div class="carousel-caption slide-caption">
             <h5>Accomplishments</h5>
             <p>We have competed in several MATE ROV competitions, including regionals and world championships.</p>
           </div>
-        </div>
+        </li>
+      </ul>
 
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev large-button carousel-button-large" type="button" data-bs-target="#outputCarousel" data-bs-slide="prev" style="z-index: 0;">
+      <button type="button" class="carousel-button carousel-button--prev" aria-label="Previous slide">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next large-button carousel-button-large" type="button" data-bs-target="#outputCarousel" data-bs-slide="next" style="z-index: 0;">
+      <button type="button" class="carousel-button carousel-button--next" aria-label="Next slide">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
       </button>
 
-      <!-- Indicators -->
-      <div class="carousel-indicators mt-3">
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="3"></button>
-        <button type="button" data-bs-target="#outputCarousel" data-bs-slide-to="4"></button>
-    </div>
-
+      <ul class="carousel-dots" aria-label="Choose slide">
+        <li><button type="button" data-slide-to="0" class="active" aria-current="true" aria-label="Go to slide 1"></button></li>
+        <li><button type="button" data-slide-to="1" aria-label="Go to slide 2"></button></li>
+        <li><button type="button" data-slide-to="2" aria-label="Go to slide 3"></button></li>
+        <li><button type="button" data-slide-to="3" aria-label="Go to slide 4"></button></li>
+        <li><button type="button" data-slide-to="4" aria-label="Go to slide 5"></button></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -332,7 +318,7 @@
     <!-- Teacher Appreciation Section -->
     <div class="section-divider">
       <h2 class="section-title section-title--spaced">Our Mentor</h2>
-      <div class="team-grid">
+      <div class="team-grid team-grid--single">
         <div class="team-card">
           <a href="https://medfordengineering.github.io/mrchristysengineering/" target="_blank" class="plain-link">
             <div class="card person-card">
