@@ -122,34 +122,18 @@
     <h2 class="section-title section-title--spaced">Meet Our Team</h2>
 
     <div class="team-grid">
-
-      <!-- Employee 1 -->
       <div class="team-card">
         <a href="https://ibrahimazeemi.com" target="_blank" class="plain-link">
           <div class="card person-card">
             <img src="{{ url_for('static', filename='img/team/ibrahima.webp') }}" class="card-img-top" alt="Ibrahim Ahmad">
             <div class="card-body">
               <h5 class="card-title">Ibrahim Ahmad</h5>
-              <p class="card-role">Mechanical Engineer Lead - 2028</p>
+              <p class="card-role">Mechanical Engineer - 2028</p>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- Employee 2 -->
-      <div class="team-card">
-        <a href="https://mothsite.netlify.app/" target="_blank" class="plain-link">
-          <div class="card person-card">
-            <img src="{{ url_for('static', filename='img/team/alachie.webp') }}" class="card-img-top" alt="Alachie Yeager">
-            <div class="card-body">
-              <h5 class="card-title">Alachie Yeager</h5>
-              <p class="card-role">Programming Lead - 2028</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Employee 3 -->
       <div class="team-card">
         <a href="https://www.mileshilliard.com/" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -162,7 +146,6 @@
         </a>
       </div>
 
-      <!-- Employee 4 -->
       <div class="team-card">
         <a href="https://www.timmy.greenlifestylelabs.com/" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -175,7 +158,30 @@
         </a>
       </div>
 
-      <!-- Employee 5 -->
+      <div class="team-card">
+        <a href="https://adam6581.wixsite.com/adam" target="_blank" class="plain-link">
+          <div class="card person-card">
+            <img src="{{ url_for('static', filename='img/team/adam.webp') }}" class="card-img-top" alt="Alachie Yeager">
+            <div class="card-body">
+              <h5 class="card-title">Adam Sayres</h5>
+              <p class="card-role">Mechanical Engineer - 2027</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://benjismit.wordpress.com/" target="_blank" class="plain-link">
+          <div class="card person-card">
+            <img src="{{ url_for('static', filename='img/team/benji.webp') }}" class="card-img-top" alt="Alachie Yeager">
+            <div class="card-body">
+              <h5 class="card-title">Benjamin Smith </h5>
+              <p class="card-role">Electrical Engineer - 2027</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <div class="team-card">
         <a href="https://jonaswirz.wordpress.com/" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -188,11 +194,24 @@
         </a>
       </div>
 
-      <!-- Employee 6 -->
+      <div class="team-card">
+        <a href="https://mothsite.netlify.app/" target="_blank" class="plain-link">
+          <div class="card person-card">
+            <img src="{{ url_for('static', filename='img/team/alachie.webp') }}" class="card-img-top" alt="Alachie Yeager">
+            <div class="card-body">
+              <h5 class="card-title">Alachie Yeager</h5>
+              <p class="card-role">Programming Lead - 2028</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- alumni (most recent first) -->
+
       <div class="team-card">
         <a href="https://abendaniel.top/" target="_blank" class="plain-link">
           <div class="card person-card">
-            <img src="{{ url_for('static', filename='img/team/pfp.webp') }}" class="card-img-top" alt="Aaron Bendaniel">
+            <img src="{{ url_for('static', filename='img/team/aaron.webp') }}" class="card-img-top" alt="Aaron Bendaniel">
             <div class="card-body">
               <h5 class="card-title">Aaron BenDaniel</h5>
               <p class="card-role">Alumni - 2025</p>
@@ -201,24 +220,10 @@
         </a>
       </div>
 
-      <!-- Employee 7 -->
-      <div class="team-card">
-        <a href="https://benwirz.com/" target="_blank" class="plain-link">
-          <div class="card person-card">
-            <img src="{{ url_for('static', filename='img/team/benw.webp') }}" class="card-img-top" alt="Ben Wirz">
-            <div class="card-body">
-              <h5 class="card-title">Ben Wirz</h5>
-              <p class="card-role">Alumni - 2025</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Employee 8 -->
       <div class="team-card">
         <a href="http://josephscottcampbell.com/" target="_blank" class="plain-link">
           <div class="card person-card">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Joseph Scott Campbell Jr">
+            <img src="{{ url_for('static', filename='img/team/scott.webp') }}" class="card-img-top" alt="Joseph Scott Campbell Jr">
             <div class="card-body">
               <h5 class="card-title">Joseph Scott Campbell Jr</h5>
               <p class="card-role">Alumni - 2025</p>
@@ -227,20 +232,18 @@
         </a>
       </div>
 
-      <!-- Employee 9 -->
       <div class="team-card">
-        <a href="https://www.linkedin.com/in/noah-ed-gibson" target="_blank" class="plain-link">
+        <a href="https://benwirz.com/" target="_blank" class="plain-link">
           <div class="card person-card">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Noah Gibson">
+            <img src="{{ url_for('static', filename='img/team/benw.webp') }}" class="card-img-top person-photo person-photo--wirz" alt="Ben Wirz">
             <div class="card-body">
-              <h5 class="card-title">Noah Gibson</h5>
-              <p class="card-role">Alumni - 2024</p>
+              <h5 class="card-title">Ben Wirz</h5>
+              <p class="card-role">Alumni - 2025</p>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- Employee 10 -->
       <div class="team-card">
         <a href="https://www.linkedin.com/in/zackbertocchi" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -253,7 +256,30 @@
         </a>
       </div>
 
-      <!-- Employee 11 -->
+      <div class="team-card">
+        <a href="https://www.linkedin.com/in/noah-ed-gibson" target="_blank" class="plain-link">
+          <div class="card person-card">
+            <img src="{{ url_for('static', filename='img/team/noah.webp') }}" class="card-img-top" alt="Noah Gibson">
+            <div class="card-body">
+              <h5 class="card-title">Noah Gibson</h5>
+              <p class="card-role">Alumni - 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="team-card">
+        <a href="https://www.mattyharris.net/" target="_blank" class="plain-link">
+          <div class="card person-card">
+            <img src="{{ url_for('static', filename='img/team/matty.webp') }}" class="card-img-top" alt="Matty Harris">
+            <div class="card-body">
+              <h5 class="card-title">Matty Harris</h5>
+              <p class="card-role">Alumni - 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <div class="team-card">
         <!--<a href="#" target="_blank" class="plain-link">-->
           <div class="card person-card">
@@ -266,7 +292,6 @@
         </a>
       </div>
 
-      <!-- Employee 12 -->
       <div class="team-card">
         <a href="https://www.linkedin.com/in/benjamin-a-santana" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -279,20 +304,6 @@
         </a>
       </div>
 
-      <!-- Employee 13 -->
-      <div class="team-card">
-        <a href="https://www.mattyharris.net/" target="_blank" class="plain-link">
-          <div class="card person-card">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Matty Harris">
-            <div class="card-body">
-              <h5 class="card-title">Matty Harris</h5>
-              <p class="card-role">Alumni - 2024</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Employee 14 -->
       <div class="team-card">
         <a href="https://www.linkedin.com/in/christopher-hunt-080019282" target="_blank" class="plain-link">
           <div class="card person-card">
@@ -305,11 +316,10 @@
         </a>
       </div>
 
-      <!-- Employee 15 -->
       <div class="team-card">
         <a href="https://gracekallberg.wordpress.com/" target="_blank" class="plain-link">
           <div class="card person-card">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="card-img-top" alt="Grace Kalberg">
+            <img src="{{ url_for('static', filename='img/team/grace.webp') }}" class="card-img-top" alt="Grace Kalberg">
             <div class="card-body">
               <h5 class="card-title">Grace Kalberg</h5>
               <p class="card-role">Alumni - 2023</p>
@@ -317,14 +327,13 @@
           </div>
         </a>
       </div>
-
-    </div>
+</div>
 
     <!-- Teacher Appreciation Section -->
     <div class="section-divider">
       <h2 class="section-title section-title--spaced">Our Mentor</h2>
-      <div class="centered-row">
-        <div class="mentor-card">
+      <div class="team-grid">
+        <div class="team-card">
           <a href="https://medfordengineering.github.io/mrchristysengineering/" target="_blank" class="plain-link">
             <div class="card person-card">
               <img src="{{ url_for('static', filename='img/team/mrchristy.webp') }}" class="card-img-top" alt="Mr. Christy">
