@@ -177,11 +177,16 @@
       var index = 0;
       var timer = null;
 
+      function syncHeight() {
+        var cur = slides[index];
+        if (cur) root.style.height = cur.offsetHeight + "px";
+      }
       function render() {
         track.style.transform = "translateX(-" + (index * 100) + "%)";
         for (var i = 0; i < dots.length; i++) {
           dots[i].classList.toggle("active", i === index);
         }
+        syncHeight();
       }
       function goTo(n) {
         index = (n + slides.length) % slides.length;
@@ -206,6 +211,16 @@
       }
       root.addEventListener("mouseenter", function () { if (timer) clearInterval(timer); });
       root.addEventListener("mouseleave", restart);
+      window.addEventListener("resize", syncHeight);
+      for (var i = 0; i < slides.length; i++) {
+        (function (slide) {
+          var imgs = slide.querySelectorAll("img");
+          for (var j = 0; j < imgs.length; j++) {
+            imgs[j].addEventListener("load", syncHeight);
+            if (imgs[j].complete) syncHeight();
+          }
+        })(slides[i]);
+      }
 
       render();
       restart();
