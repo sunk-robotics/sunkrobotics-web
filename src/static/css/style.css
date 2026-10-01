@@ -223,7 +223,7 @@ h3 {
   transition: height 0.35s ease;
 }
 .gallery-carousel .carousel-slide {
-  height: clamp(260px, 58vw, 500px);
+  height: clamp(280px, 72svh, 800px);
 }
 .gallery-carousel .carousel-slide .carousel-image {
   height: 100%;
